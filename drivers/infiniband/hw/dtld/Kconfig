@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config DTLD_INFINIBAND
+	tristate "Datenlord RDMA"
+	depends on NETDEVICES && ETHERNET && PCI
+	help
+	  This driver provides low-level InfiniBand support for
+	  Datenlord PCI Express host channel adapters (HCAs).
